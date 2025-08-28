@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaDumbbell, FaBars, FaTimes } from "react-icons/fa";
+import {  FaBars, FaTimes } from "react-icons/fa";
+import { RxAvatar } from "react-icons/rx";
 import { IoCallOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
@@ -80,14 +81,14 @@ const Navbar = () => {
       >
         {/* Header with Icon */}
         <div className="flex justify-between items-center p-4 border-b">
-          <div className="flex items-center space-x-2">
-            <FaDumbbell className="text-pink-500 text-xl" />
+          <div className="flex items-center space-x-2 pl-4">
+            <RxAvatar className="text-pink-500 text-4xl" />
             <h1 className="text-xl font-bold">
-              Body<span className="text-pink-500">Shape</span>
+              Prot<span className="text-pink-600">folio</span>
             </h1>
           </div>
           <button onClick={() => setMenuOpen(false)}>
-            <FaTimes className="text-2xl text-gray-700 hover:text-cyan-500 transition" />
+            <FaTimes className="text-xl text-gray-700 hover:text-pink-500 transition" />
           </button>
         </div>
 
